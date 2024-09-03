@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Opacity</title>
+    <style>
+        #image-display {
+            max-width: 100%;
+            max-height: 400px;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <img id="image-display" src="assets/kebunRaya.jfif" alt="Selected Image">
+
+    <center>
+    <label for="image-select">Ubah :</label>
+    <select id="image-select">
+        <option value="assets/kebunRaya.jfif">Gambar 1</option>
+        <option value="assets/kuntumFarmfield.jfif">Gambar 2</option>
+        <option value="assets/tamanSakura.jfif">Gambar 3</option>
+    </select>
+
+    <select id="opacity-select">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+
+    <label for="opacity-select">Pilih Opacity:</label>
+    <button onclick="changeImage() + changeOpacity()">Kirim</button>
+    </center>
+
+    <script>
+        function changeImage() {
+            var images = document.getElementById("image-select").value;
+            document.getElementById("image-display").src = images;
+        }
+
+        function changeOpacity() {
+            var opacity = document.getElementById("opacity-select").value;
+            document.getElementById("image-display").style.opacity = opacity;
+        }
+    </script>
+
+</body>
+</html>

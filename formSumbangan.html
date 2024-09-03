@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sumbangan Siswa</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <table>
+        <tr>
+            <th>No</th>
+            <th><center>Keterangan</center></th>
+            <th><center>Bersedia Membayar</center></th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Bersedia membayar <b>Dana Sumbangan Pembangunan (DSP)</b> sebesar <b>Rp. 8.500.000</b> dengan mekanisme <br> pembayaran Dana Sumbangan Pendidikan</td>
+            <td><input type="radio" name="dsp"> Lunas saat Daftar Ulang <br>
+            <input type="radio" name="dsp"> 60% dibayarkan saat daftar ulang, dan sisanya dibayarkan <br>paling lambat tanggal 13 Juli 2024.</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Bersedia membayar <b>Sumbangan Penyelenggara Pendidikan (SPP)</b> secara rutin setiap bulan sebesar <b>Rp. 550.000</b> <br> yang dibayarkan sebelum tanggal 10 setiap bulannya kecuali bulan Juli 2024</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td><b>Pembayaran Lainnya.</b> <br> <br> Setelah Putra/Putri kami diterima di SMK Wikrama Bogor, kami juga bersedia memberikan <br> <br>
+                a. <b>Wakaf pembangunan Masjid Al-Ikram :</b></td>
+            <td><input type="radio" name="wakaf"> Rp. 300.000 <br>
+                <input type="radio" name="wakaf"> Rp. 500.000 <br>
+                <input type="radio" name="wakaf"> Rp. 1.000.000 <br>
+                <input type="radio" name="wakaf"> Rp. 2.000.000 <br>
+                <input type="radio" name="wakaf"> Rp. 5.000.000 <br>
+                <input type="radio" name="wakaf"> > Rp. 5.000.000 atau Rp. <input type="text" name="wakaf"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>b. <b>Zakat Infaq dan Shodaqoh</b> secara rutin setiap bulan</td>
+            <td>Rp. <input type="text"></td>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>

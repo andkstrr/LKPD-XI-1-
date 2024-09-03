@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h4>Opsi Jawaban & Poin</h4>
+        <label for="">Opsi 1:</label><br><br>
+        <input type="number" name="opsi" placeholder="Poin">
+        <input type="text" name="opsi" placeholder="Deskripsi Opsi">
+        <br><br><br>
+    </div>
+    <br>
+    <div>
+        <button onclick="addOpsi()" id="btn">Tambah Opsi</button>
+    </div>
+
+    <script>
+        let num = 1;
+        let option = document.getElementById("container");
+        
+        function addOpsi() {
+            num++;
+            option.innerHTML += `
+                <label for="">Opsi ${num}</label><br><br>
+                <input type="number" name="opsi" placeholder="Poin">
+                <input type="text" name="opsi" placeholder="Deskripsi Opsi"><br><br>
+            `;
+        }
+    </script>
+</body>
+</html>

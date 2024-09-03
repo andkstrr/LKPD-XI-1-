@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .branding {
+        float: left;
+    }
+
+    .branding h1 {
+        margin: 0;
+    }
+
+    nav {
+        float: right;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #cccccc;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>Liburan Yuk!</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="landingPage.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <select name="destination" id="destination" style="border-radius: 10px;" onchange="location = this.value;">
+                                <option value="#">Select Destination</option>
+                                <option value="land1.html">Kuntum Farmfield</option>
+                                <option value="land2.html">Kebun Raya Bogor</option>
+                                <option value="land3.html">Taman Sakura Cibodas</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

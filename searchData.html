@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Data</title>
+</head>
+<body>
+    <center>
+    <div class="container" style="margin-top: 60px; padding: 20px; width: 50%; background-color: rgb(239, 240, 190); border-radius: 10px;">
+        <h2>Form Search Data :</h2>
+        <input type="text" id="form" placeholder="search..">
+        <button onclick="searchData()">Submit</button>
+    
+        <div id="output" style="margin-top: 15px;"></div>
+    </div>
+    </center>
+
+    <script>
+        function searchData() {
+            var input = document.getElementById("form").value;
+            if (!input) {
+                document.getElementById("output").innerText = "Masukkan nama terlebih dahulu"
+            } else {
+                document.getElementById("output").innerText = "Mencari data " + input  + "..." 
+            }
+        }
+    </script>
+</body>
+</html>

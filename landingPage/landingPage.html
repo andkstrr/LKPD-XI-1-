@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburan Yuk!</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    nav {
+        float: right;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #cccccc;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown select {
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    .showcase {
+        color: rgb(65, 65, 65);
+        height: 400px;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .showcase h1 {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    .showcase p {
+        font-size: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>Explore Beautiful Destinations in Bogor City</h1>
+            <p>Discover breathtaking landscapes, rich culture, and unforgettable experiences.</p>
+        </div>
+    </section>
+
+    <center>
+    <section id="preview">
+        <div class="container">
+            <img src="assets/tuguKujang.jpg" alt="">
+            <img src="assets/tuguKujang.jpg" alt="">
+            <img src="assets/tuguKujang.jpg" alt="">
+            <img src="assets/tuguKujang.jpg" alt="">
+        </div>
+    </section>
+    </center>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        document.getElementById("header").innerHTML = fetch('header.html').then(response => response.text()).then(data => {document.getElementById("header").innerHTML = data;});
+        document.getElementById("footer").innerHTML = fetch('footer.html').then(response => response.text()).then(data => {document.getElementById("footer").innerHTML = data;});
+    </script>
+</body>
+</html>
